@@ -60,4 +60,4 @@ def download_review_summary(verbose=False):
 
 
 if __name__ == '__main__':
-    review_summary = download_review_summary(verbose=True)
+    review_summary_for_top_100 = download_review_summary(verbose=True)
