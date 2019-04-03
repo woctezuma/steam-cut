@@ -25,7 +25,8 @@ python main.py
 
 ## Reference:
 
--   [A post on ResetERA which goal is to guess Valve's cut.](https://www.resetera.com/threads/pc-gaming-era-april-2019-goodbye-uzzy-is-your-new-king.108742/page-22#post-19499658)
+-   [A post on ResetERA which goal is to guess Valve's cut](https://www.resetera.com/threads/pc-gaming-era-april-2019-goodbye-uzzy-is-your-new-king.108742/page-22#post-19499658),
+-   [A thread on ResetERA, based on this repository](https://www.resetera.com/threads/what-cut-do-valve-actually-take-from-devs-is-it-really-as-high-as-some-people-think-lets-find-out.109435/).
 
 <!-- Definitions -->
 
