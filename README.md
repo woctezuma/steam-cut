@@ -17,6 +17,12 @@ This repository contains Python code to fetch the number of reviews for Steam an
 pip install -r requirements.txt
 ```
 
+## Usage
+
+```bash
+python main.py
+```
+
 <!-- Definitions -->
 
 [build]: <https://travis-ci.org/woctezuma/steam-cut>
