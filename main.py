@@ -19,10 +19,11 @@ def get_top_100_app_ids():
     return top_100_app_ids
 
 
-def download_review_summary(verbose=False):
+def download_review_summary(input_app_ids=None, verbose=False):
     # Reference: https://github.com/woctezuma/download-steam-reviews/blob/master/steamreviews/download_reviews.py
 
-    input_app_ids = get_top_100_app_ids()
+    if input_app_ids is None:
+        input_app_ids = get_top_100_app_ids()
 
     request_params = {
         'json': '1',
