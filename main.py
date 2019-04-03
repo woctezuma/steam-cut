@@ -32,7 +32,7 @@ def download_review_summary(verbose=False):
     review_summary = dict()
 
     if verbose:
-        print('AppID;Steam;Non-Steam')
+        print('AppID,Steam,Non-Steam')
 
     for app_id in input_app_ids:
         review_summary[app_id] = dict()
@@ -52,7 +52,7 @@ def download_review_summary(verbose=False):
                 review_summary[app_id][purchase_type] = -1
 
         if verbose:
-            print('{};{};{}'.format(app_id,
+            print('{},{},{}'.format(app_id,
                                     review_summary[app_id]['steam'],
                                     review_summary[app_id]['non_steam_purchase']))
 
