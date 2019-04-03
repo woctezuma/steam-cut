@@ -36,4 +36,4 @@ python main.py
 [codecov-image]: <https://codecov.io/gh/woctezuma/steam-cut/branch/master/graph/badge.svg>
 
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-cut>
-[codacy-image]: <https://api.codacy.com/project/badge/Grade/TODO>
+[codacy-image]: <https://api.codacy.com/project/badge/Grade/a057682969e24d5790ca2e4fa8bfd1b1>
