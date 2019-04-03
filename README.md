@@ -23,6 +23,10 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Reference:
+
+-   [A post on ResetERA which goal is to guess Valve's cut.](https://www.resetera.com/threads/pc-gaming-era-april-2019-goodbye-uzzy-is-your-new-king.108742/page-22#post-19499658)
+
 <!-- Definitions -->
 
 [build]: <https://travis-ci.org/woctezuma/steam-cut>
