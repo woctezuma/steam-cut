@@ -1,8 +1,6 @@
 # Steam Cut
 
 [![Build status][build-image]][build]
-[![Updates][dependency-image]][pyup]
-[![Python 3][python3-image]][pyup]
 [![Code coverage][codecov-image]][codecov]
 [![Code Quality][codacy-image]][codacy]
 
