@@ -29,8 +29,8 @@ python main.py
 
 <!-- Definitions -->
 
-[build]: <https://travis-ci.org/woctezuma/steam-cut>
-[build-image]: <https://travis-ci.org/woctezuma/steam-cut.svg?branch=master>
+[build]: <https://github.com/woctezuma/steam-cut/actions>
+[build-image]: <https://github.com/woctezuma/steam-cut/workflows/Python package/badge.svg?branch=master>
 
 [pyup]: <https://pyup.io/repos/github/woctezuma/steam-cut/>
 [dependency-image]: <https://pyup.io/repos/github/woctezuma/steam-cut/shield.svg>
