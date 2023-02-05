@@ -46,7 +46,7 @@ def download_review_summary(input_app_ids=None, verbose=False):
                 params=request_params,
             )
 
-            if resp_data.status_code == 200:
+            if resp_data.ok:
                 result = resp_data.json()
                 query_summary = result['query_summary']
                 num_reviews = query_summary['total_reviews']
