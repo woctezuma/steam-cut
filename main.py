@@ -9,12 +9,12 @@ def get_steam_api_url():
 def get_top_100_app_ids():
     # Reference: https://github.com/woctezuma/steam-descriptions/blob/master/benchmark_utils.py
 
-    data_request = dict()
+    data_request = {}
     data_request['request'] = 'top100in2weeks'
 
     data = steamspypi.download(data_request)
 
-    top_100_app_ids = list(int(app_id) for app_id in data.keys())
+    top_100_app_ids = [int(app_id) for app_id in data]
 
     return top_100_app_ids
 
@@ -30,13 +30,13 @@ def download_review_summary(input_app_ids=None, verbose=False):
         'language': 'all',
     }
 
-    review_summary = dict()
+    review_summary = {}
 
     if verbose:
         print('AppID,Steam,Non-Steam')
 
     for app_id in input_app_ids:
-        review_summary[app_id] = dict()
+        review_summary[app_id] = {}
 
         for purchase_type in ['steam', 'non_steam_purchase']:
             request_params['purchase_type'] = purchase_type
