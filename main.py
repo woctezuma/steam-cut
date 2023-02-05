@@ -41,7 +41,10 @@ def download_review_summary(input_app_ids=None, verbose=False):
         for purchase_type in ['steam', 'non_steam_purchase']:
             request_params['purchase_type'] = purchase_type
 
-            resp_data = requests.get(get_steam_api_url() + str(app_id), params=request_params)
+            resp_data = requests.get(
+                get_steam_api_url() + str(app_id),
+                params=request_params,
+            )
 
             if resp_data.status_code == 200:
                 result = resp_data.json()
@@ -53,9 +56,13 @@ def download_review_summary(input_app_ids=None, verbose=False):
                 review_summary[app_id][purchase_type] = -1
 
         if verbose:
-            print('{},{},{}'.format(app_id,
-                                    review_summary[app_id]['steam'],
-                                    review_summary[app_id]['non_steam_purchase']))
+            print(
+                '{},{},{}'.format(
+                    app_id,
+                    review_summary[app_id]['steam'],
+                    review_summary[app_id]['non_steam_purchase'],
+                ),
+            )
 
     return review_summary
 
