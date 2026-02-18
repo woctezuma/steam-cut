@@ -3,7 +3,7 @@ import steamspypi
 
 
 def get_steam_api_url():
-    return 'https://store.steampowered.com/appreviews/'
+    return 'https://store.steampowered.com/ajaxappreviews/'
 
 
 def get_top_100_app_ids():
