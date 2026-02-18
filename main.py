@@ -2,11 +2,11 @@ import requests
 import steamspypi
 
 
-def get_steam_api_url():
+def get_steam_api_url() -> str:
     return 'https://store.steampowered.com/ajaxappreviews/'
 
 
-def get_top_100_app_ids():
+def get_top_100_app_ids() -> list[int]:
     # Reference: https://github.com/woctezuma/steam-descriptions/blob/master/benchmark_utils.py
 
     data_request = {}
@@ -14,12 +14,14 @@ def get_top_100_app_ids():
 
     data = steamspypi.download(data_request)
 
-    top_100_app_ids = [int(app_id) for app_id in data]
-
-    return top_100_app_ids
+    return [int(app_id) for app_id in data]
 
 
-def download_review_summary(input_app_ids=None, verbose=False):
+def download_review_summary(
+    input_app_ids: list[int] | None = None,
+    *,
+    verbose: bool = False,
+) -> dict:
     # Reference: https://github.com/woctezuma/download-steam-reviews/blob/master/steamreviews/download_reviews.py
 
     if input_app_ids is None:
